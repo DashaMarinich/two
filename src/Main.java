@@ -3,14 +3,14 @@ public class Main {
 
         int startSum = 100;
         int receipt = 300;
-        System.out.println("Итого на счету:");
-        System.out.println(startSum + receipt); // Итого на счету
 
+        int bonus = 0;
         if (receipt > 1000) {
-            System.out.println(receipt / 100); // Бонусы
-        } else {
-            System.out.println("Бонус:");
-            System.out.println("0");
+            bonus = receipt / 100;
         }
+
+        int totalSum = startSum + receipt + bonus;
+        System.out.println("Бонус:" + bonus);
+        System.out.println("Итого на счету:" + totalSum);
     }
 }
